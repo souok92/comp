@@ -17,3 +17,29 @@
 
 ## ROS2 기반 워크플로우
 이건 추후 업데이트 하도록 할게용
+
+
+--- stderr: dg3f_m_driver                                        
+CMake Error at CMakeLists.txt:10 (find_package):
+  By not providing "Findhardware_interface.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "hardware_interface", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "hardware_interface" with any of the following names:
+
+    hardware_interfaceConfig.cmake
+    hardware_interface-config.cmake
+
+  Add the installation prefix of "hardware_interface" to CMAKE_PREFIX_PATH or
+  set "hardware_interface_DIR" to a directory containing one of the above
+  files.  If "hardware_interface" provides a separate development package or
+  SDK, be sure it has been installed.
+
+
+gmake: *** [Makefile:431: cmake_check_build_system] Error 1
+---
+Failed   <<< dg3f_m_driver [4.17s, exited with code 2]
+Aborted  <<< dg5f_driver [4.14s]
+Aborted  <<< dg_msgs [4.84s]                                             
+Aborted  <<< dg_description [3.09s]      
